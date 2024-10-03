@@ -1,0 +1,58 @@
+
+    /* Adjust styles for the printable area */
+    body {
+        font-size: 12px; /* Adjust font size for better readability on paper */
+        padding: 0; /* Remove padding to maximize printable area */
+    }
+
+    .main-header {
+        text-align: center;
+        margin-top: 10mm;
+        font-size: 30px; /* Adjust top margin for header */
+    }
+
+    .schedule-container {
+        margin: 10mm auto; /* Center the content horizontally */
+    }
+
+    .schedule {
+        width: calc(100% - 20px); /* Adjust width to fit within printable area */
+        margin: 10px 0;
+        overflow: visible; /* Allow content to overflow into subsequent pages */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px; /* Adjust cell padding for better spacing */
+        text-align: center;
+    }
+
+    .schedule-header {
+        background-color: #f0f0f0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .day-cell {
+        width: 50%;
+    }
+
+    .sub-column {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .sub-column div {
+        width: calc(50% - 10px); /* Adjust the width as needed */
+    }
+
+    /* Page break styles */
+    .page-break {
+        page-break-before: always; /* Insert page break before this element */
+    }
